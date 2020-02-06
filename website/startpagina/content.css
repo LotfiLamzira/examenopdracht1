@@ -1,0 +1,85 @@
+div#mainLayoutGrid>div#content>div#header {
+  grid-area: header;
+  border-bottom: 3px solid #ddd;
+}
+
+div#mainLayoutGrid>div#content>div#inlogblok {
+  grid-area: inlogblok;
+}
+
+div#mainLayoutGrid>div#content>div#inlogblok>p.inlogveld {
+  background-color: #fff;
+  margin: 0px;
+  padding: 10px;
+  border: 1.5px solid #ddd;
+}
+
+div#mainLayoutGrid>div#content>div#inlogblok>p.inlogveld>a {
+  text-decoration: none;
+  display: block;
+  color: #000;
+}
+
+div#mainLayoutGrid>div#content>div#inlogblok>p#welkom {
+  color: #fff;
+  background-color: #009688;
+  padding: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0px;
+}
+
+div#mainLayoutGrid>div#content>div#inlogblok>p#welkom {
+  color: #fff;
+  background-color: #009688;
+  padding: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0px;
+}
+
+div#mainLayoutGrid>div#content>div#inlogblok>div#inlogknopveld {
+  border: 1.5px solid #ddd;
+  padding: 30px;
+  padding-left: 20px;
+}
+
+div#mainLayoutGrid>div#content>div#inlogblok>div#inlogknopveld>a#inlogknop {
+  color: #fff;
+  background-color: #009688;
+  padding: 10px;
+  margin-left: 0px;
+  display: inline;
+  text-decoration: none;
+}
+
+div#mainLayoutGrid>div#content>div#inlogblok>div#inlogknopveld>a#inlogknop:hover {
+  color: #fff;
+  background-color: #7bada8;
+  padding: 10px;
+  margin-left: 0px;
+  display: inline;
+  text-decoration: none;
+}
+
+div#mainLayoutGrid>div#content>div#hamburger {
+  text-align: right;
+}
+
+div#mainLayoutGrid>div#content>div#hamburger>a {
+  color: #000;
+  font-size: 30px;
+}
+
+@media only screen and (min-width: 600px) {
+  div#mainLayoutGrid>div#content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 500px;
+    grid-template-areas: "header . ." ".inlogblok .";
+  }
+  div#mainLayoutGrid>div#content>div#hamburger>a {
+    display: none;
+    color: #000;
+  }
+}

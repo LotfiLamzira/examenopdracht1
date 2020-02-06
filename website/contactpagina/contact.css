@@ -1,0 +1,114 @@
+div#contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto auto auto;
+  grid-template-areas: "header header header" "mail location phone" "name name name" "e-mail e-mail e-mail" "message message message" "send . ." "about about about" "footer footer footer";
+}
+
+div#contact>div#header {
+  grid-area: header;
+}
+
+div#contact>div#mail {
+  grid-area: mail;
+  text-align: center;
+  background-color: #616161;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+div#contact>div#mail>p>i {
+  font-size: 40px;
+}
+
+div#contact>div#location {
+  grid-area: location;
+  text-align: center;
+  background-color: #009688;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+div#contact>div#location>p>i {
+  font-size: 40px;
+}
+
+div#contact>div#phone {
+  grid-area: phone;
+  text-align: center;
+  background-color: #616161;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+div#contact>div#phone>p>i {
+  font-size: 40px;
+}
+
+div#contact>div#name {
+  grid-area: name;
+  margin-top: 10px;
+  padding-top: 20px;
+  border-top: solid;
+  border-width: 1px;
+  border-color: #fff;
+}
+
+div#contact>div#name>div#blank1 {
+  background-color: #fff;
+  width: 100%;
+  padding: 5px;
+}
+
+div#contact>div#e-mail {
+  grid-area: e-mail;
+  padding-top: 20px;
+}
+div#contact>div#e-mail>div#blank2 {
+  background-color: #fff;
+  width: 100%;
+  padding: 5px;
+}
+
+div#contact>div#message {
+  grid-area: message;
+  padding-top: 20px;
+}
+div#contact>div#message>div#blank3 {
+  background-color: #fff;
+  width: 100%;
+  padding: 5px;
+}
+
+div#contact>div#send {
+  grid-area: send;
+}
+
+div#contact>div#send>p {
+  background-color: #009688;
+  color: #fff;
+  padding: 10px;
+  margin-right: 40%;
+}
+
+div#contact>div#about {
+  grid-area: about;
+  background-color: #616161;
+  color: #fff;
+}
+div#contact>div#about>p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+div#footer {
+  grid-area: footer;
+  text-align: center;
+  background-color: #009688;
+  color: #fff;
+}
+div#mainLayoutGrid>div#contact>div#header>p>a {
+  text-align: right;
+  display: block;
+  color: #000;
+  font-size: 30px;
+}

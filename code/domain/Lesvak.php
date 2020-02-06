@@ -7,11 +7,11 @@ class Lesvak{
   private $_lesOnderwerp = "";
   
   public function __construct(string $lesOnderwerp, Lestitel $lestitel) {//Als je een lestitel wilt aanmaken moet je een lesonderwerp en een lestitel meegeven
-			$this->_lesOnderwerp	= $lesOnderwerp;	
-			$this->_lestitel	= $lestitels;	
+		$this->_lesOnderwerp	= $lesOnderwerp;	
+		$this->_lestitel	= $lestitels;	
 	}
 	public function GeefTaakOp() {//voegt een taak toe aan het lesvak
-    $taak1 = new Taak($soortTaak,	$commentaar, $deadline);
+  	$taak1 = new Taak($soortTaak,	$commentaar, $deadline);
 		$this->_taken[] = $taak1;
   }
   public function VerwijderTaak(){//verwijdert een taak uit de array

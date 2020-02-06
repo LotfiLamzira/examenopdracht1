@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: #9e9e9e;
+}
+
+div#mainLayoutGrid>div#contact {
+  grid-area: contact;
+}
+
+div#mainLayoutGrid>div#menu {
+  grid-area: menu;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+div#mainLayoutGrid>div#menu {
+  display: none;
+}
+
+div#mainLayoutGrid>div#menu:target {
+  display: block;
+}
+
+@media only screen and (min-width: 600px) {
+  div#mainLayoutGrid {
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-rows: auto;
+    grid-template-areas: "menu contact";
+    grid-gap: 20px;
+  }
+  div#mainLayoutGrid>div#menu {
+    display: block;
+  }
+  div#mainLayoutGrid>div#menu>a {
+    display: none;
+  }
+  div#mainLayoutGrid>div#contact>div#header>p>a>i {
+    display: none;
+  }
+}
