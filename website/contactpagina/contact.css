@@ -106,9 +106,3 @@ div#footer {
   background-color: #009688;
   color: #fff;
 }
-div#mainLayoutGrid>div#contact>div#header>p>a {
-  text-align: right;
-  display: block;
-  color: #000;
-  font-size: 30px;
-}
