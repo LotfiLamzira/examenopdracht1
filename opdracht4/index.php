@@ -1,316 +1,63 @@
-<?php
-    require_once "mustache.php-2.12.0/mustache.php";
-
-    $profielfoto = array(
-        "profielfoto" => array(
-            array("id" => 1, "imageName" => "image.png")
-        )
-    );
-
-    $mustache = new Mustache_Engine(array("loader" => new Mustache_Loader_FilesystemLoader(__DIR__ . "/templates")));
-    $profielfotoGridHTML = $mustache->render("profielfotoGrid", $profielfoto);
-
-?>
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>roosterpagina</title>
-  <link type="text/css" rel="stylesheet" href="roostermenu.css">
-  <link type="text/css" rel="stylesheet" href="roosterindex.css">
+
+  <title>Document</title>
+  <link type="text/css" rel="stylesheet" href="startindex.css">
+  <link type="text/css" rel="stylesheet" href="startmenu.css">
+  <link type="text/css" rel="stylesheet" href="content.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
 </head>
 
 <body>
+
   <div id="mainLayoutGrid">
     <div id="menu">
-      <?php
-        echo  $profielfotoGridHTML;
-       ?>
-
-      <h2>
-        (Naam Gebruiker)
-      </h2>
-      <h6>
-        Lessenrooster van (klas gebruiker)
-      </h6>
+      <a href="#"><i class="fas fa-times"></i></a>
+      <h1>
+        Lessenrooster
+      </h1>
 
       <ul class="menu">
-        <li><a href="https://bin16.piustien.net/examenopdracht/examenopdrachtdeel2/startpagina/startindex.html" class="knop"><i class="fas fa-th-large"></i>UITLOGGEN</a></li>
+        <li><a href="#" class="knop"><i class="fas fa-th-large"></i>REGISTREER</a></li>
         <li><a href="https://bin16.piustien.net/examenopdracht/examenopdrachtdeel2/contactpagina/contactindex.html"><i class="fas fa-envelope"></i>CONTACT</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>ZOEK LESSENROOSTER</a></li>
       </ul>
 
     </div>
-
-    <div id="index">
-
+    <div id="content">
+      <div id="hamburger">
+        <a href="#menu"><i class="fas fa-bars"></i></a>
+      </div>
       <div id="header">
-        <p>
-          <a href="#menu"><i class="fas fa-bars"></i></a>
-        </p>
-        <p>
-          Lessenrooster van (naam van gebruiker)
-        </p>
+        <h3>
+          Lessenrooster
+        </h3>
       </div>
-      <div id="content">
-        <div id="maandag" class="dag">
-          <p>
-            Maandag
-          </p>
-        </div>
-        <div id="dinsdag" class="dag">
-          <p>
-            Dinsdag
-          </p>
-        </div>
-        <div id="woensdag" class="dag">
-          <p>
-            Woensdag
-          </p>
-        </div>
-        <div id="donderdag" class="dag">
-          <p>
-            Donderdag
-          </p>
-        </div>
-        <div id="vrijdag" class="dag">
-          <p>
-            Vrijdag
-          </p>
-        </div>
-        <div id="roosterMa1" class="lesvak">
-          <p>
-            Lestitel
-          </p>
-          lesonderwerp
-        </div>
-        <div id="roosterMa2" class="lesvak">
-          <p>
-            Lestitel
-          </p>
-          lesonderwerp
-        </div>
-        <div id="roosterMa3" class="lesvak">
-          <p>
-            Lestitel
-          </p>
-          lesonderwerp
-        </div>
-        <div id="roosterMa4" class="lesvak">
-          <p>
-            Lestitel
-          </p>
-          lesonderwerp
-        </div>
-        <div id="roosterMa5" class="lesvak">
-          <p>
-            Lestitel
-          </p>
-          lesonderwerp
-        </div>
-        <div id="roosterMa6" class="lesvak">
-          <p>
-            Lestitel
-          </p>
-          lesonderwerp
-        </div>
-        <div id="roosterMa7" class="lesvak">
-          <p>
-            Lestitel
-          </p>
-          lesonderwerp
-        </div>
-        <div id="roosterMa8" class="lesvak">
-          <p>
-            Lestitel
-          </p>
-          lesonderwerp
-        </div>
-        <div id="roosterDi1" class="lesvak">
-          <p>
-            Lestitel
-          </p>
-          lesonderwerp
-        </div>
-        <div id="roosterDi2" class="lesvak">
-          <p>
-            Lestitel
-          </p>
-          lesonderwerp
-        </div>
-        <div id="roosterDi3" class="lesvak">
-          <p>
-            Lestitel
-          </p>
-          lesonderwerp
-        </div>
-        <div id="roosterDi4" class="lesvak">
-          <p>
-            Lestitel
-          </p>
-          lesonderwerp
-        </div>
-        <div id="roosterDi5" class="lesvak">
-          <p>
-            Lestitel
-          </p>
-          lesonderwerp
-        </div>
-        <div id="roosterDi6" class="lesvak">
-          <p>
-            Lestitel
-          </p>
-          lesonderwerp
-        </div>
-        <div id="roosterDi7" class="lesvak">
-          <p>
-            Lestitel
-          </p>
-          lesonderwerp
-        </div>
-        <div id="roosterDi8" class="lesvak">
-          <p>
-            Lestitel
-          </p>
-          lesonderwerp
-        </div>
-        <div id="roosterWo1" class="lesvak">
-          <p>
-            Lestitel
-          </p>
-          lesonderwerp
-        </div>
-        <div id="roosterWo2" class="lesvak">
-          <p>
-            Lestitel
-          </p>
-          lesonderwerp
-        </div>
-        <div id="roosterWo3" class="lesvak">
-          <p>
-            Lestitel
-          </p>
-          lesonderwerp
-        </div>
-        <div id="roosterWo4" class="lesvak">
-          <p>
-            Lestitel
-          </p>
-          lesonderwerp
-        </div>
-        <div id="roosterDo1" class="lesvak">
-          <p>
-            Lestitel
-          </p>
-          lesonderwerp
-        </div>
-        <div id="roosterDo2" class="lesvak">
-          <p>
-            Lestitel
-          </p>
-          lesonderwerp
-        </div>
-        <div id="roosterDo3" class="lesvak">
-          <p>
-            Lestitel
-          </p>
-          lesonderwerp
-        </div>
-
-        <div id="roosterDo4" class="lesvak">
-          <p>
-            Lestitel
-          </p>
-          lesonderwerp
-        </div>
-        <div id="roosterDo5" class="lesvak">
-          <p>
-            Lestitel
-          </p>
-          lesonderwerp
-        </div>
-        <div id="roosterDo6" class="lesvak">
-          <p>
-            Lestitel
-          </p>
-          lesonderwerp
-        </div>
-        <div id="roosterDo7" class="lesvak">
-          <p>
-            Lestitel
-          </p>
-          lesonderwerp
-        </div>
-
-        <div id="roosterDo8" class="lesvak">
-          <p>
-            Lestitel
-          </p>
-          lesonderwerp
-        </div>
-        <div id="roosterVr1" class="lesvak">
-          <p>
-            Lestitel
-          </p>
-          lesonderwerp
-        </div>
-        <div id="roosterVr2" class="lesvak">
-          <p>
-            Lestitel
-          </p>
-          lesonderwerp
-        </div>
-        <div id="roosterVr3" class="lesvak">
-          <p>
-            Lestitel
-          </p>
-          lesonderwerp
-        </div>
-        <div id="roosterVr4" class="lesvak">
-          <p>
-            Lestitel
-          </p>
-          lesonderwerp
-        </div>
-        <div id="roosterVr5" class="lesvak">
-          <p>
-            Lestitel
-          </p>
-          lesonderwerp
-        </div>
-        <div id="roosterVr6" class="lesvak">
-          <p>
-            Lestitel
-          </p>
-          lesonderwerp
-        </div>
-        <div id="roosterVr7" class="lesvak">
-          <p>
-            Lestitel
-          </p>
-          lesonderwerp
-        </div>
-        <div id="roosterVr8" class="lesvak">
-          <p>
-            Lestitel
-          </p>
-          lesonderwerp
-        </div>
-      </div>
-
-      <div id="footer">
-        <p>
-          powered by Lotfi & Ahmed
+      <div id="inlogblok">
+        <p id="welkom">
+          Welkom!
         </p>
+        <p class="inlogveld">
+          <a href="#">Leerling</a>
+        </p>
+        <p class="inlogveld">
+          <a href="#">Leeraar</a>
+        </p>
+        <p class="inlogveld">
+          Email:
+        </p>
+        <p class="inlogveld">
+          Wachtwoord:
+        </p>
+        <div id="inlogknopveld">
+          <a href="#" id="inlogknop">Log In</a>
+        </div>
+
+
       </div>
     </div>
   </div>
