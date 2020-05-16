@@ -3,7 +3,7 @@
 
     $profielfoto = array(
         "profielfoto" => array(
-            array("id" => 1, "imageName" => "image.png"),
+            array("id" => 1, "imageName" => "image.png")
         )
     );
 
