@@ -24,7 +24,7 @@
 
       <ul class="menu">
         <li><a href="#" class="knop"><i class="fas fa-th-large"></i>REGISTREER</a></li>
-        <li><a href="https://bin16.piustien.net/examenopdracht/examenopdrachtdeel2/contactpagina/contactindex.html"><i class="fas fa-envelope"></i>CONTACT</a></li>
+        <li><a href="contactindex.html"><i class="fas fa-envelope"></i>CONTACT</a></li>
       </ul>
 
     </div>

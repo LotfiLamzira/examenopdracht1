@@ -40,8 +40,8 @@
        ?>
 
       <ul class="menu">
-        <li><a href="https://bin16.piustien.net/examenopdracht/examenopdrachtdeel2/startpagina/index.php" class="knop"><i class="fas fa-th-large"></i>UITLOGGEN</a></li>
-        <li><a href="https://bin16.piustien.net/examenopdracht/examenopdrachtdeel2/contactpagina/contactindex.html"><i class="fas fa-envelope"></i>CONTACT</a></li>
+        <li><a href="index.php" class="knop"><i class="fas fa-th-large"></i>UITLOGGEN</a></li>
+        <li><a href="contactindex.html"><i class="fas fa-envelope"></i>CONTACT</a></li>
         <li><a href="#"><i class="fas fa-search"></i>ZOEK LESSENROOSTER</a></li>
       </ul>
 
