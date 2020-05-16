@@ -1,0 +1,128 @@
+*{
+  font-family: "Lato", sans-serif;
+}
+div#mainLayoutGrid {
+  display: grid;
+
+  grid-template-columns: auto;
+  grid-template-rows: 30px auto auto auto auto 50px;
+
+  grid-template-areas:  "head"
+                        "titel"
+                        "email"
+                        "wachtwoord"
+                        "login"
+                        "signup";
+}
+
+div#mainLayoutGrid>#head{
+  grid-area: head;
+  
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: none;
+
+  z-index: 1;
+  box-sizing: inherit;
+  display: inline-block;
+  overflow: hidden;
+  
+  background-color: #f1f1f1;
+  color: #000;
+  
+  padding-left: 200px;
+  margin: 10px 0;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  vertical-align: middle;
+  border: none;
+}
+
+div#mainLayoutGrid>#titel{
+  grid-area: titel;
+  
+  padding-top: 100px;
+  text-align: center;
+  box-sizing: inherit;
+  display: block;
+}
+
+div#mainLayoutGrid>#titel>p{
+  font-size: 24px;
+  text-decoration: underline solid #808080;
+}
+
+div#mainLayoutGrid>#email{
+  grid-area: email;
+  padding-left: 20%;
+}
+
+div#mainLayoutGrid>#email>p,
+div#mainLayoutGrid>#wachtwoord>p{
+  font-size: 20px;
+}
+
+div#mainLayoutGrid>#email>#inputEmail>input,
+div#mainLayoutGrid>#wachtwoord>#inputWachtwoord>input{
+  width: 80%;
+  border: 1px solid #ccc;
+  padding: 8px;
+  display: block;
+  overflow: visible;
+}
+
+div#mainLayoutGrid>#wachtwoord{
+  grid-area: wachtwoord;
+  padding-left: 20%;
+}
+
+div#mainLayoutGrid>#login{
+  grid-area: login;
+  padding-left: 20%;
+  margin-top: 50px;
+  text-align: center;
+}
+
+div#mainLayoutGrid>#login>a{
+  font-size: 20px;
+  color: #FFF;
+  width: 80%;
+  padding: 8px;
+  display: block;
+  background-color: #000;
+  text-decoration: none;
+}
+
+div#mainLayoutGrid>#signup{
+  grid-area: signup;
+  
+  font-weight: 400;
+  font-size: 20px;
+  
+  z-index: 1;
+  box-sizing: inherit;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  
+  text-decoration: none;
+  text-align: center;
+
+  white-space: nowrap;
+  background-color: #f1f1f1;
+  color: #000;
+  
+  padding-top: 50px;
+  padding-bottom: 100px;
+  margin-top: 100px;
+  width: 100%;
+}
+
+div#mainLayoutGrid>#signup>a{
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+}
+

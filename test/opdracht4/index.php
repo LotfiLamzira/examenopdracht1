@@ -1,66 +1,56 @@
+<?php
+  require_once "mustache.php.2.12.0/mustache.php";
+  
+  $dagen = array{"dagen" => array{
+    array("herineringname" -> "tandarts", "evenementID" -> "1", "afspraakID" -> "1"),
+    array("herineringname" -> "docter", "evenementID" -> "2", "afspraakID" -> "2"),
+    array("herineringname" -> "verjaardag", "evenementID" -> "3", "afspraakID" -> "3"),
+    array("herineringname" -> "lunch", "evenementID" -> "4", "afspraakID" -> "4"),
+    array("herineringname" -> "winkelen", "evenementID" -> "5", "afspraakID" -> "5")
+  }
+  };
+  
+  $mustache = new Mustache_Engine(array{"loader" => new Mustache_Loader_FilesystemLoader(_DIR_ . "/dag")});
+  $agendaGridHTML = $mustache->render("agendaGrid");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-
-  <title>Document</title>
-  <link type="text/css" rel="stylesheet" href="startindex.css">
-  <link type="text/css" rel="stylesheet" href="startmenu.css">
-  <link type="text/css" rel="stylesheet" href="content.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-</head>
-
-<body>
-
-  <div id="mainLayoutGrid">
-    <div id="menu">
-      <a href="#"><i class="fas fa-times"></i></a>
-      <h1>
-        Lessenrooster
-      </h1>
-
-      <ul class="menu">
-        <li><a href="#" class="knop"><i class="fas fa-th-large"></i>REGISTREER</a></li>
-        <li><a href="contactindex.php"><i class="fas fa-envelope"></i>CONTACT</a></li>
-      </ul>
-
-    </div>
-    <div id="content">
-      <div id="hamburger">
-        <a href="#menu"><i class="fas fa-bars"></i></a>
-      </div>
-      <div id="header">
-        <h3>
-          Lessenrooster
-        </h3>
-      </div>
-      <div id="inlogblok">
-        <p id="welkom">
-          Welkom!
-        </p>
-        <p class="inlogveld">
-          <a href="#">Leerling</a>
-        </p>
-        <p class="inlogveld">
-          <a href="#">Leeraar</a>
-        </p>
-        <p class="inlogveld">
-          Email:
-        </p>
-        <p class="inlogveld">
-          Wachtwoord:
-        </p>
-        <div id="inlogknopveld">
-          <a href="#" id="inlogknop">Log In</a>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="Weekpagina.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+  </head>
+  <body>
+    <div id="mainLayoutGrid">
+      <div id="head">
+        <div id="home">
+          <A href="Inlogpagina.html">Home</a>
         </div>
-
-
+        <div id="week">
+          <A href="Weekpagina.html">Week</a>
+        </div>
+        <div id="maand">
+          <A href="Homepagina.html">Maand</a>
+        </div>
+        <div id="signOut">
+          <A href="Inlogpagina.html">Sign Out</a>
+        </div>
+      </div>
+      <div id="titel">
+        <p>
+          Januari
+        </p>
+      </div>
+      <div id="kalender">
+<?php
+  echo $agendaGridHTML;
+        
+?>
+      </div>
+      <div id="volgende">
+        <a>Volgende week</a>
       </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>
