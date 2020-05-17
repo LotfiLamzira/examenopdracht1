@@ -34,6 +34,9 @@
 
 ?>
 
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,23 +44,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>roosterpagina</title>
-  <link type="text/css" rel="stylesheet" href="roostermenu.css">
-  <link type="text/css" rel="stylesheet" href="roosterindex.css">
+  <link type="text/css" rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 </head>
 
-<body>
+<body id="roosterindex">
   <div id="mainLayoutGrid">
     <div id="menu">
-      <?php
+     <?php
         echo  $profielGridHTML;
        ?>
 
       <ul class="menu">
-        <li><a href="index.php" class="knop"><i class="fas fa-th-large"></i>UITLOGGEN</a></li>
-        <li><a href="contactindex.php"><i class="fas fa-envelope"></i>CONTACT</a></li>
+        <li><a href="startindex.html" class="knop"><i class="fas fa-th-large"></i>UITLOGGEN</a></li>
+        <li><a href="contactindex.html"><i class="fas fa-envelope"></i>CONTACT</a></li>
         <li><a href="#"><i class="fas fa-search"></i>ZOEK LESSENROOSTER</a></li>
       </ul>
 
@@ -69,12 +71,10 @@
         <p>
           <a href="#menu"><i class="fas fa-bars"></i></a>
         </p>
-       <?php
+        <?php
         echo  $headerRoosterGridHTML;
        ?>
-      <br>
       </div>
-      
       <div id="content">
         <div id="maandag" class="dag">
           <p>
@@ -107,15 +107,14 @@
            ?>
         </div>
         <div id="roosterMa2" class="lesvak">
-           <?php
+         <?php
             echo  $roosterGridHTML;
            ?>
         </div>
         <div id="roosterMa3" class="lesvak">
-          <?php
+         <?php
             echo  $roosterGridHTML;
            ?>
-          
         </div>
         <div id="roosterMa4" class="lesvak">
           <?php
@@ -123,7 +122,7 @@
            ?>
         </div>
         <div id="roosterMa5" class="lesvak">
-         <?php
+          <?php
             echo  $roosterGridHTML;
            ?>
         </div>
@@ -163,22 +162,22 @@
            ?>
         </div>
         <div id="roosterDi5" class="lesvak">
-        <?php
+         <?php
             echo  $roosterGridHTML;
            ?>
         </div>
         <div id="roosterDi6" class="lesvak">
-          <?php
+         <?php
             echo  $roosterGridHTML;
            ?>
         </div>
         <div id="roosterDi7" class="lesvak">
-          <?php
+         <?php
             echo  $roosterGridHTML;
            ?>
         </div>
         <div id="roosterDi8" class="lesvak">
-          <?php
+        <?php
             echo  $roosterGridHTML;
            ?>
         </div>
@@ -193,7 +192,7 @@
            ?>
         </div>
         <div id="roosterWo3" class="lesvak">
-          <?php
+         <?php
             echo  $roosterGridHTML;
            ?>
         </div>
@@ -203,12 +202,12 @@
            ?>
         </div>
         <div id="roosterDo1" class="lesvak">
-          <?php
+         <?php
             echo  $roosterGridHTML;
            ?>
         </div>
         <div id="roosterDo2" class="lesvak">
-          <?php
+         <?php
             echo  $roosterGridHTML;
            ?>
         </div>
@@ -219,22 +218,22 @@
         </div>
 
         <div id="roosterDo4" class="lesvak">
-         <?php
+          <?php
             echo  $roosterGridHTML;
            ?>
         </div>
         <div id="roosterDo5" class="lesvak">
-          <?php
+        <?php
             echo  $roosterGridHTML;
            ?>
         </div>
         <div id="roosterDo6" class="lesvak">
-          <?php
+         <?php
             echo  $roosterGridHTML;
            ?>
         </div>
         <div id="roosterDo7" class="lesvak">
-          <?php
+         <?php
             echo  $roosterGridHTML;
            ?>
         </div>
@@ -250,12 +249,12 @@
            ?>
         </div>
         <div id="roosterVr2" class="lesvak">
-          <?php
+         <?php
             echo  $roosterGridHTML;
            ?>
         </div>
         <div id="roosterVr3" class="lesvak">
-          <?php
+         <?php
             echo  $roosterGridHTML;
            ?>
         </div>
@@ -270,7 +269,7 @@
            ?>
         </div>
         <div id="roosterVr6" class="lesvak">
-          <?php
+         <?php
             echo  $roosterGridHTML;
            ?>
         </div>
@@ -280,7 +279,7 @@
            ?>
         </div>
         <div id="roosterVr8" class="lesvak">
-          <?php
+         <?php
             echo  $roosterGridHTML;
            ?>
         </div>

@@ -25,24 +25,23 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
   <title>contactpagina</title>
-  <link type="text/css" rel="stylesheet" href="contactindex.css">
-  <link type="text/css" rel="stylesheet" href="contactmenu.css">
+  <link type="text/css" rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <link type="text/css" rel="stylesheet" href="contact.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 </head>
 
-<body>
-  <div id="mainLayoutGrid">
+<body id="contactindex">
+  <div id="contactpagina">
     <div id="menu">
        <?php
         echo  $profielGridHTML;
        ?>
 
+
       <ul class="menu">
-        <li><a href="index.php" class="knop"><i class="fas fa-th-large"></i>UITLOGGEN</a></li>
-        <li><a href="roosterindex.php"><i class="fas fa-home"></i>HOME</a></li>
+        <li><a href="startindex.html" class="knop"><i class="fas fa-th-large"></i>UITLOGGEN</a></li>
+        <li><a href="roosterindex.html"><i class="fas fa-home"></i>HOME</a></li>
       </ul>
 
     </div>
