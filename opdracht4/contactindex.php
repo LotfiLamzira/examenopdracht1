@@ -40,8 +40,8 @@
 
 
       <ul class="menu">
-        <li><a href="startindex.html" class="knop"><i class="fas fa-th-large"></i>UITLOGGEN</a></li>
-        <li><a href="roosterindex.html"><i class="fas fa-home"></i>HOME</a></li>
+        <li><a href="index.php" class="knop"><i class="fas fa-th-large"></i>UITLOGGEN</a></li>
+        <li><a href="roosterindex.php"><i class="fas fa-home"></i>HOME</a></li>
       </ul>
 
     </div>
