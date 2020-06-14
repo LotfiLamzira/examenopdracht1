@@ -1,0 +1,23 @@
+
+      <div id="content">
+
+        {{#lesdagen}}
+        <div>
+            <div class="dag">
+            <p>
+                {{dagnaam}}
+            </p>
+            </div>
+            {{#lessen}}
+            <div class="lesvak">
+                <section id="rooster">
+                    <h5>{{lestitel}}</h5>
+                
+                    <p>{{lesonderwerp}}</p>
+                </section>
+            </div>
+            {{/lessen}}
+        </div>
+        {{/lesdagen}}
+        
+      </div>

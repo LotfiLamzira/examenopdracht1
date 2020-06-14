@@ -399,7 +399,6 @@ div#mainLayoutGrid>div#index>div#header {
 div#mainLayoutGrid>div#index>div#header>p {
   grid-area: header;
 	font-size: 30px;
-
 	line-height: 54px;
 	text-size-adjust: 100%;
 	font-family: "Raleway", sans-serif;

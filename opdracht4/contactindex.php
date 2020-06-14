@@ -4,8 +4,7 @@
     $profiel = array(
         "profiel" => array(
             array("imageSrc" => "image.png"),
-            array("title" => "Ahmed El-hila"),
-            array("text" => "Lessenrooster van Ahmed El-hila")
+            array("menu" => "Ahmed El-hila")
          
         )
     );

@@ -6,16 +6,14 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
   <title>Document</title>
-  <link type="text/css" rel="stylesheet" href="startindex.css">
-  <link type="text/css" rel="stylesheet" href="startmenu.css">
-  <link type="text/css" rel="stylesheet" href="content.css">
+  <link type="text/css" rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 
-<body>
+<body id ="startindex">
 
-  <div id="mainLayoutGrid">
+  <div id="startpagina">
     <div id="menu">
       <a href="#"><i class="fas fa-times"></i></a>
       <h1>

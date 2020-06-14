@@ -5,14 +5,14 @@
         "profiel" => array(
             array("imageSrc" => "image.png"),
             array("title" => "Ahmed El-Hila"),
-            array("text" => "Lessenrooster van Ahmed")
+          
         
         )
     );
     
     $headerRooster = array(
         "headerRooster" => array(
-            array("text" => "Lessenrooster van Ahmed")
+            array("header" => "Lessenrooster van Ahmed")
            
         
         )
